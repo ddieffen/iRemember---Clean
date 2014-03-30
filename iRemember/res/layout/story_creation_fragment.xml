@@ -84,7 +84,6 @@ University of Maryland to appear in their names.
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/story_create_value_story_id"
                 android:inputType="text"
                 android:text="@string/story_create_title_default_value" />
 
@@ -126,7 +125,7 @@ University of Maryland to appear in their names.
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_body"
                 android:onClick="addAudioClicked"
-                android:text="Add Audio" />
+                android:text="@string/story_create_audio_button" />
 
             <TextView
                 android:id="@+id/story_create_value_audio_location"
@@ -154,7 +153,7 @@ University of Maryland to appear in their names.
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_audio_location"
                 android:onClick="addVideoClicked"
-                android:text="Add Video" />
+                android:text="@string/story_create_video_button" />
 
             <TextView
                 android:id="@+id/story_create_value_video_location"
@@ -202,7 +201,7 @@ University of Maryland to appear in their names.
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_image_name"
                 android:onClick="addPhotoClicked"
-                android:text="Add Photo" />
+                android:text="@string/story_create_photo_button" />
 
             <TextView
                 android:id="@+id/story_create_value_image_location"
@@ -233,9 +232,8 @@ University of Maryland to appear in their names.
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_image_location"
-                android:inputType="text"
                 android:onClick="getDateClicked"
-                android:text="Click text to set" />
+                android:text="@string/story_create_set_date" />
             
             <!-- latitude label/value pair -->
 
@@ -246,7 +244,7 @@ University of Maryland to appear in their names.
                 android:layout_alignBaseline="@+id/story_create_value_location_button"
                 android:layout_alignBottom="@+id/story_create_value_location_button"
                 android:layout_alignParentLeft="true"
-                android:text="location button" />
+                android:text="@string/story_create_label_location" />
 
             <Button
                 android:id="@+id/story_create_value_location_button"
@@ -255,7 +253,7 @@ University of Maryland to appear in their names.
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_story_time"
                 android:onClick="getLocationClicked"
-                android:text="Get Location" />
+                android:text="@string/story_create_location_button" />
 
             <!-- longitude label/value pair -->
 
@@ -266,7 +264,7 @@ University of Maryland to appear in their names.
                 android:layout_alignBaseline="@+id/story_create_value_latitude"
                 android:layout_alignBottom="@+id/story_create_value_latitude"
                 android:layout_alignParentLeft="true"
-                android:text="location" />
+                android:text="@string/story_create_label_latitude" />
 
             <TextView
                 android:id="@+id/story_create_value_latitude"
@@ -275,7 +273,7 @@ University of Maryland to appear in their names.
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_location_button"
                 android:gravity="right"
-                android:text="0"
+                android:text="@string/story_create_label_latlong_default"
                 android:textAlignment="gravity" />
 
             <TextView
@@ -285,7 +283,7 @@ University of Maryland to appear in their names.
                 android:layout_alignBaseline="@+id/story_create_value_longitude"
                 android:layout_alignBottom="@+id/story_create_value_longitude"
                 android:layout_alignParentLeft="true"
-                android:text="location" />
+                android:text="@string/story_create_label_longitude" />
 
             <TextView
                 android:id="@+id/story_create_value_longitude"
@@ -294,7 +292,7 @@ University of Maryland to appear in their names.
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/story_create_value_latitude"
                 android:gravity="right"
-                android:text="0"
+                android:text="@string/story_create_label_latlong_default"
                 android:textAlignment="gravity" />
         </RelativeLayout>
     </ScrollView>

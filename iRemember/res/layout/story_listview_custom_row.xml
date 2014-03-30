@@ -58,7 +58,7 @@ University of Maryland to appear in their names.
          android:layout_height="wrap_content"
          android:layout_alignParentTop="true"
          android:textSize="16sp"
-         android:text="KEY_ID"
+         android:text="@string/story_row_key_default"
          android:textStyle="bold" />
 
     <TextView
@@ -66,7 +66,7 @@ University of Maryland to appear in their names.
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:paddingLeft="20dp"
-         android:text="title"
+         android:text="@string/story_row_title_default"
          android:textSize="16sp"
          android:layout_below="@+id/story_listview_custom_row_KEY_ID_textView"
          />
@@ -75,7 +75,7 @@ University of Maryland to appear in their names.
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:paddingLeft="20dp"
-         android:text="creation_time"
+         android:text="@string/story_row_creation_time_default"
          android:textSize="16sp"
          android:layout_below="@+id/story_listview_custom_row_title_textView"
          />

@@ -181,10 +181,6 @@ public class CreateStoryActivity extends StoryActivityBase {
 		fragment.setLocation(loc);
 	}
 
-	private static Uri getOutputMediaFileUri(int type) {
-		return Uri.fromFile(getOutputMediaFile(type));
-	}
-
 	private static File getOutputMediaFile(int type) {
 		Log.d(LOG_TAG, "getOutputMediaFile() type:" + type);
 		// To be safe, you should check that the SDCard is mounted
