@@ -227,12 +227,12 @@ public class EditStoryFragment extends Fragment {
 
 		Editable titleEditable = titleET.getText();
 		Editable bodyEditable = bodyET.getText();
-		String audioLinkEditable = (String) audioLinkET.getText();
-		String videoLinkEditable = (String) videoLinkET.getText();
+		String audioLinkEditable =  audioLinkET.getText().toString();
+		String videoLinkEditable =  videoLinkET.getText().toString();
 		Editable imageNameEditable = imageNameET.getText();
-		String imageMetaDataEditable = (String) imageMetaDataET.getText();
+		String imageMetaDataEditable = imageMetaDataET.getText().toString();
 		Editable tagsEditable = tagsET.getText();
-		String storyTimeEditable = (String) storyTimeET.getText();
+		String storyTimeEditable = storyTimeET.getText().toString();
 		Editable latitudeEditable = latitudeET.getText();
 		Editable longitudeEditable = longitudeET.getText();
 
