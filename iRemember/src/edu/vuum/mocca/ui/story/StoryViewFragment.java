@@ -198,15 +198,7 @@ public class StoryViewFragment extends Fragment {
 		editButton.setOnClickListener(myOnClickListener);
 		deleteButton.setOnClickListener(myOnClickListener);
 
-		try {
-			setUiToStoryData(getUniqueKey());
-		} catch (RemoteException e) {
-			Toast.makeText(getActivity(),
-					"Error retrieving information from local data store.",
-					Toast.LENGTH_LONG).show();
-			Log.e(LOG_TAG, "Error getting Story data from C.P.");
-			// e.printStackTrace();
-		}
+		
 	}
 
 	public void setUiToStoryData(long getUniqueKey) throws RemoteException {
