@@ -68,6 +68,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import edu.vanderbilt.mooc.R;
 import edu.vuum.mocca.orm.MoocResolver;
 import edu.vuum.mocca.orm.StoryData;
@@ -319,6 +320,7 @@ public class CreateStoryFragment extends Fragment {
 				// User cancelled the image capture
 			} else {
 				// Image capture failed, advise user
+				Toast.makeText(getActivity(), "Image Capture Failed", Toast.LENGTH_SHORT).show();
 			}
 		} else if (requestCode == CreateStoryActivity.CAMERA_VIDEO_REQUEST) {
 			if (resultCode == CreateStoryActivity.RESULT_OK) {
@@ -327,9 +329,10 @@ public class CreateStoryFragment extends Fragment {
 				fileUri = data.getData();
 				videoLocation.setText(fileUri.toString());
 			} else if (resultCode == CreateStoryActivity.RESULT_CANCELED) {
-				// User cancelled the image capture
+				// User cancelled the video capture
 			} else {
-				// Image capture failed, advise user
+				// Video capture failed, advise user
+				Toast.makeText(getActivity(), "Video Capture Failed", Toast.LENGTH_SHORT).show();
 			}
 		} else if (requestCode == CreateStoryActivity.MIC_SOUND_REQUEST) {
 			
@@ -339,9 +342,10 @@ public class CreateStoryFragment extends Fragment {
 				audioPath = (String) data.getExtras().get("data");
 				audioLocation.setText("file://" + audioPath.toString());
 			} else if (resultCode == CreateStoryActivity.RESULT_CANCELED) {
-				// User cancelled the image capture
+				// User cancelled the audio capture
 			} else {
-				// Image capture failed, advise user
+				// Audio capture failed, advise user
+				Toast.makeText(getActivity(), "Audio Capture Faile", Toast.LENGTH_SHORT).show();
 			}
 
 		}
