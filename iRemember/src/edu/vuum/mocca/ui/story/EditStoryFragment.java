@@ -303,7 +303,7 @@ public class EditStoryFragment extends Fragment {
 			// set the EditTexts to the current values
 			titleET.setText(String.valueOf(storyData.title).toString());
 			bodyET.setText(String.valueOf(storyData.body).toString());
-			audioLinkET.setText("file:///" + String.valueOf(storyData.audioLink).toString());
+			audioLinkET.setText(String.valueOf(storyData.audioLink).toString());
 			videoLinkET.setText(String.valueOf(storyData.videoLink).toString());
 			imageNameET.setText(String.valueOf(storyData.imageName).toString());
 			imageMetaDataET.setText(String.valueOf(storyData.imageLink)
