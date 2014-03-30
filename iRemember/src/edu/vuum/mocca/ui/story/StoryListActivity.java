@@ -86,7 +86,7 @@ public class StoryListActivity extends StoryActivityBase {
             event.startTracking();
             return true;
         }
-        return super.onKeyLongPress(keyCode, event);
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override
